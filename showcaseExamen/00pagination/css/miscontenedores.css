@@ -1,0 +1,35 @@
+.caja01{
+     font-size: 3em;
+     width: 30%;
+     margin: 0 auto;
+ }
+.caja02{
+    font-size: 6em;
+    width: 60%;
+    margin: 0 auto;
+}
+.caja03{
+    font-size: 20em;
+    width: 80%;
+    margin: 0 auto;
+}
+div.fileinputs {
+    position: relative;
+}
+
+div.fakefile {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+input.file {
+    position: relative;
+    text-align: right;
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    z-index: 2;
+}
+

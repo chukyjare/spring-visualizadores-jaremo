@@ -1,0 +1,59 @@
+
+.movil3d {
+    height: 50%;
+    width: 50%;
+    position: relative;
+    perspective: 7000px;
+    transform-style: preserve-3d;
+    transform:  rotatex(30deg) translateZ(-30px) translateY(2px) translateX(10px);
+}
+
+
+.caraFrontal {
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    transform: translateZ(10px);
+    background-color: aqua;
+}
+
+.caraTrasera {
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    background-color: red;
+    transform: rotateY(180deg);
+}
+
+.caraIzquierda {
+    position: absolute;
+    width: 10px;
+    height: 100px;
+    background-color: bisque;
+    transform: rotateY(90deg) translateZ(-5px) translateX(-5px) rotateY(180deg);
+}
+
+.caraDerecha {
+    position: absolute;
+    width: 10px;
+    height: 100px;
+    background-color: aquamarine;
+    transform: rotateY(90deg) translateZ(55px) translateX(-5px) translateY(0px);
+}
+
+.caraSuperior {
+    position: absolute;
+    width: 60px;
+    height: 10px;
+    transform: rotateX(90deg) translateZ(5px) translateY(5px);
+    background-color: green
+}
+
+.caraInferior{
+    position: absolute;
+    width: 60px;
+    height: 10px;
+    transform: rotateX(90deg) translateZ(-95px) translateY(5px);
+    background-color: yellow
+}
+

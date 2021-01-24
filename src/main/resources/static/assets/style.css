@@ -1,0 +1,157 @@
+/* **********     Reset CSS     ********** */
+:root {
+  --main-font: sans-serif;
+  --font-size: 16px;
+  --main-color: #f7df1e;
+  --second-color: #222;
+  --main-modal-color: rgba(247, 222, 30, 0.85);
+  --second-modal-color: rgba(34, 34, 34, 0.85);
+  --container-width: 1200px;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+a{
+  color:#01579b;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #00b0ff;
+}
+h1{
+  text-align: center;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+.error {
+  padding: 1rem;
+  font-size:150%;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #dc3545;
+}
+.form-search{
+  margin:auto;
+  text-align: center;
+}
+.form-search input{
+  display:block;
+  margin: auto;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+.grid-fluid{
+  margin:1rem auto;
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.header{
+  padding:0.5rem;
+  position: sticky;
+  top:0;
+  text-align: center;
+  background-color: #fff;
+}
+.header > *{
+   margin: 1rem auto;
+}
+
+.loader{
+  margin: 1rem auto;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+}
+.post-card{
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80%;
+  background-color: #eceff1;
+}
+.post-card p{
+display:flex;
+justify-content: space-between;
+}
+
+
+/* -----------Filter showcase---------------- */
+
+.contenido01B {
+  width: 60%;
+  margin: 50px auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-image: url(../img/grid.png);
+  background-repeat: repeat;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+.contenido01 {
+  width: 90%;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+/* -----------Filter showcase---------------- */
+
+.radio-buttonOff {
+  display: none;
+}
+
+.showcaseFilter {
+  display: flex;
+  justify-content: center;
+}
+
+
+.showcaseFilter-label {
+  display: inline-block;
+  border: 4px solid rgb(88, 87, 28);
+  padding: 10px 20px;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.showcaseFilter-label:hover {
+  background-color: #657051;
+}
+
+#showcaseshmJM:checked~#headerShowcaseFilter .shmJM,
+#showcaseshmCarrusel:checked~#headerShowcaseFilter .shmCarrusel,
+#showcaseshmJesadri:checked~#headerShowcaseFilter .shmJesadri,
+#showcaseshmExamen:checked~#headerShowcaseFilter .shmExamen
+ {
+  background-color: rgb(177, 138, 167);
+}
+
+/*
+#showcaseluqui:checked~main .luqui {
+    display: block;
+}
+
+#tech-radio:checked~main .tech {
+    display: block;
+}*/
+

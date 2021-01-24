@@ -1,0 +1,16 @@
+<html>
+
+<body>
+  <h1>Ficha Producto: <span th:text="${producto.modelo}"></span></h1>
+
+  <p>Referenciaa: <span th:text="${producto.referencia}"></span></p>
+  <p>Memoria: <span th:text="${producto.memoria}"></span></p>
+  <p>Precio: <span th:text="${producto.precio}"></span></p>
+  <p>Proveedor: <span th:text="${producto.proveedor}"></span></p>
+  <p>Stock: <span th:text="${producto.stock}"></span></p>
+  <img th:src="${producto.imageModel}" height="80px" width="80px">
+  
+  <a href="/">Volver a la tienda</a>
+</body>
+
+</html>

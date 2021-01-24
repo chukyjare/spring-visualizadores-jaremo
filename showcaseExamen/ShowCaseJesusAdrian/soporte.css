@@ -1,0 +1,44 @@
+.soporteFrontal {
+    position: absolute;
+    width: 5px;
+    height: 70px;
+    transform: translateZ(5px);
+    background-color: #828282;
+}
+
+.soporteTrasera {
+    position: absolute;
+    width: 5px;
+    height: 70px;
+    background-color: #828282;
+    transform: rotateY(180deg);
+}
+
+.soporteIzquierda {
+    position: absolute;
+    width: 5px;
+    height: 70px;
+    background-color: #828282;
+    transform: rotateY(90deg) translateZ(2.5px) translateX(-2.5px) rotateY(180deg);
+}
+
+.soporteDerecha {
+    position: absolute;
+    width: 5px;
+    height: 70px;
+    background-color: #828282;
+    transform: rotateY(90deg) translateZ(2.5px) translateX(-2.5px) 
+}
+.ventosa{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 300px;
+    background-color: #828282;
+    transform: rotateX(30deg) translateZ(24px) translateX(30px) translateY(-40px)
+}
+.soporte{
+    transform-style: preserve-3d;
+    transform: translateX(37.5px) translateY(-50px);
+}
+

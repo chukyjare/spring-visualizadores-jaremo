@@ -1,0 +1,26 @@
+<html>
+
+<body>
+  <h1>Tienda Harnina</h1>
+
+
+  <div th:each="producto : ${productos}">
+
+    <a th:with="baseUrl=('/producto/'  + ${producto.id})" th:href="@{${baseUrl}}"><span
+        th:text="${producto.modelo}"></span></a>
+
+    <span th:text="${producto.precio}"></span></a>
+  </div>
+
+
+  <span th:if="${showPrev}"><a th:with="
+      baseUrl=('/store/?page='  + ${prevPage})" th:href="@{${baseUrl}}">Prev</span></a></span>
+
+  <span th:text="${numPage + 1}"></span>
+
+  <span th:if="${showNext}"><a th:with="
+            baseUrl=('/store/?page='  + ${nextPage})" th:href="@{${baseUrl}}">Next</span></a></span>
+
+</body>
+
+</html>

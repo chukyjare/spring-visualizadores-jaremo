@@ -1,0 +1,43 @@
+  
+  .picture-jare {
+    padding-left: 50px;
+    width: 300px;
+    height: 520px;
+    overflow: hidden;
+  }
+  .picture-jare img {
+    display: block;
+    width: 200%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .detail-jare {
+    background-color: rgb(255, 237, 137);
+    padding: 25px 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .detail-jare h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  .detail-jare span {
+    display: block;
+    font-size: 16px;
+    color: #8314b6;
+  }
+
+  .detail-jare  a{
+    border-radius: 1px solid black;
+    color:rgb(33, 78, 175);
+  }
+
+  .detail-jare  a:hover{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #8314b6;
+    color: rgb(255, 237, 137);
+  }
+  
